@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawers Installation Guide</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .step {
+            display: none;
+            padding: 20px 0;
+        }
+
+        .step.active {
+            display: block;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .logo {
+            height: 50px;
+            width: auto;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #C15F3C;
+        }
+
+        ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 12px 0;
+        }
+
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            background: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover:not(:disabled) {
+            background: #f5f5f5;
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        button.primary {
+            background: #C15F3C;
+            color: white;
+            border-color: #C15F3C;
+        }
+
+        button.primary:hover:not(:disabled) {
+            background: #A04F2D;
+        }
+
+        .step-counter {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        a {
+            color: #C15F3C;
+        }
+
+        .note {
+            background: #f9f9f9;
+            border-left: 3px solid #C15F3C;
+            padding: 10px 15px;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .step-content {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .step-content ol {
+            flex: 0 0 auto;
+            width: 300px;
+            margin-top: 0;
+        }
+
+        .step-image {
+            width: 400px;
+            border: 2px solid #999;
+            border-radius: 4px;
+            flex-shrink: 0;
+            margin-top: -55px;
+            margin-left: 106px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Drawers Installation Guide</h1>
+    </div>
+
+    <div class="step active" data-step="1">
+        <h2>Step 1: Download the Extension</h2>
+        <div class="step-content">
+            <ol>
+                <li>Open the <a href="https://drive.google.com/drive/folders/1TLk1AhDsDvSD0qMTaQeHWikPAPETp73M?usp=sharing" target="_blank">Google Drive folder</a></li>
+                <li>Click the Download button</li>
+                <li>Wait for <code>Drawers.zip</code> to download</li>
+            </ol>
+            <img src="https://i.imgur.com/XsKG4rr.png" alt="Download from Google Drive" class="step-image">
+        </div>
+    </div>
+
+    <div class="step" data-step="2">
+        <h2>Step 2: Extract the Files</h2>
+        <ol>
+            <li>Locate <code>Drawers.zip</code> in your Downloads folder</li>
+            <li>Double-click (Mac) or right-click and select "Extract All" (Windows)</li>
+            <li>Move the extracted <code>Drawers</code> folder to your Desktop</li>
+        </ol>
+        <div class="note">
+            <strong>Important:</strong> Don't delete this folder after installation. Chrome needs it to run the extension.
+        </div>
+    </div>
+
+    <div class="step" data-step="3">
+        <h2>Step 3: Open Chrome Extensions</h2>
+        <ol>
+            <li>Open Google Chrome</li>
+            <li>Type <code>chrome://extensions/</code> in the address bar</li>
+            <li>Press Enter</li>
+        </ol>
+    </div>
+
+    <div class="step" data-step="4">
+        <h2>Step 4: Enable Developer Mode</h2>
+        <ol>
+            <li>Find the "Developer mode" toggle in the top-right corner</li>
+            <li>Click to turn it ON (it will turn blue)</li>
+            <li>New buttons will appear: "Load unpacked", "Pack extension", and "Update"</li>
+        </ol>
+    </div>
+
+    <div class="step" data-step="5">
+        <h2>Step 5: Load the Extension</h2>
+        <ol>
+            <li>Click "Load unpacked"</li>
+            <li>Navigate to your Desktop (or wherever you saved the Drawers folder)</li>
+            <li>Select the <code>Drawers</code> folder</li>
+            <li>Click "Select Folder" (Mac) or "Select" (Windows)</li>
+        </ol>
+        <div class="note">
+            <strong>Note:</strong> Select the Drawers folder itself, not a file inside it.
+        </div>
+    </div>
+
+    <div class="step" data-step="6">
+        <h2>Step 6: Pin the Extension</h2>
+        <ol>
+            <li>Look for the Drawers card in your extensions list</li>
+            <li>Click the puzzle piece icon (🧩) in your Chrome toolbar</li>
+            <li>Find "Drawers" and click the pin icon to keep it visible</li>
+        </ol>
+    </div>
+
+    <div class="step" data-step="7">
+        <h2>Step 7: Start Using Drawers</h2>
+        <ol>
+            <li>Click the Drawers icon in your toolbar</li>
+            <li>Click "+ Add Drawer" to create your first drawer</li>
+            <li>Name it and click "Create"</li>
+            <li>Navigate to any webpage and click "+ Add Card" to save it</li>
+        </ol>
+        <div class="note">
+            <strong>Tip:</strong> The URL, title, and description fields will auto-fill from the current page.
+        </div>
+    </div>
+
+    <div class="step" data-step="8">
+        <h2>Setup Complete</h2>
+        <p>Drawers is now installed and ready to use.</p>
+        <p><strong>Quick Reference:</strong></p>
+        <ul>
+            <li>Create drawers to organize resources by topic</li>
+            <li>Add cards to save links with descriptions</li>
+            <li>Use tags to filter and organize cards</li>
+            <li>Search across all drawers to find resources</li>
+            <li>Download/upload drawers to share with others</li>
+        </ul>
+    </div>
+
+    <div class="navigation">
+        <button id="prevBtn" onclick="changeStep(-1)">← Previous</button>
+        <div class="step-counter"><span id="current">1</span> of 8</div>
+        <button id="nextBtn" class="primary" onclick="changeStep(1)">Next →</button>
+    </div>
+
+    <script>
+        let currentStep = 1;
+        const totalSteps = 8;
+
+        function updateDisplay() {
+            // Update step visibility
+            document.querySelectorAll('.step').forEach(step => {
+                step.classList.remove('active');
+            });
+            document.querySelector(`.step[data-step="${currentStep}"]`).classList.add('active');
+
+            // Update counter
+            document.getElementById('current').textContent = currentStep;
+
+            // Update buttons
+            document.getElementById('prevBtn').disabled = currentStep === 1;
+
+            const nextBtn = document.getElementById('nextBtn');
+            if (currentStep === totalSteps) {
+                nextBtn.textContent = 'Finish';
+            } else {
+                nextBtn.textContent = 'Next →';
+            }
+        }
+
+        function changeStep(direction) {
+            const newStep = currentStep + direction;
+
+            if (newStep < 1 || newStep > totalSteps) {
+                if (newStep > totalSteps) {
+                    window.close();
+                }
+                return;
+            }
+
+            currentStep = newStep;
+            updateDisplay();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' && currentStep < totalSteps) changeStep(1);
+            if (e.key === 'ArrowLeft' && currentStep > 1) changeStep(-1);
+        });
+
+        updateDisplay();
+    </script>
+</body>
+</html>
